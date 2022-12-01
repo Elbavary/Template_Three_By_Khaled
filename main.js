@@ -40,7 +40,7 @@ let counter = setInterval(() => {
   let seconds = Math.floor((dateDiff % (1000 * 60)) / 1000);
   // Add Time Units To The Page
   document.getElementById("days").innerHTML =
-    days < 100 ? `0${days}` : days < 10 ? `00${days}` : days;
+     days < 10 ? `0${days}` : days;
   document.getElementById("hours").innerHTML = hours < 10 ? `0${hours}` : hours;
   document.getElementById("minutes").innerHTML =
     minutes < 10 ? `0${minutes}` : minutes;
